@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="projet3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title target="blank">projet3</title>
+</head>
+<body>
+    <div id="image">
+        <img src="Budget.png" alt="Logo du budget">
+    </div>  
+    <div id="sold">
+        <div id="budget">
+            <div id="budget1">Solde</div>
+            <div id="price" class="price"> CFA</div>
+            
+        </div>
+        <div id="budget">
+            <div id="budget1" class="depense">Dépenses</div>
+            <div id="price" class="prixD"> CFA</div>
+            
+        </div>
+        <div id="budget">
+            <div id="budget1" class="sold">Budget</div>
+            <div id="price" class="prixS"> CFA</div>
+    
+        </div>
+    </div>
+    
+    <div id="table1">
+        <div id="titab2">
+            <h2>Liste des revenus</h2>
+            <table id="tab2">
+                <tr>
+                    <td>
+                        <div id="ajout">
+                            AJOUTER REVENU 
+                            <button id="button" type="submit" ><ion-icon  name="add-circle-outline" id="button"></ion-icon></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        
+        <table>
+            <thead>
+                <tr id="title">
+                    <td>TITRE</td>
+                    <td>MONTANT</td>
+                    <td>ACTIONS</td>
+                </tr>
+            </thead>
+            <tbody class="tabody">
+                
+            </tbody>
+            
+             <!--
+            <tr>
+                <td>Business</td>
+                <td>100.000 FCFA</td>
+                <td>
+                    <form action="">
+                        <button id="but1" type="submit">
+                            supprimer
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Bonus</td>
+                <td>30.000 FCFA</td>
+                <td>
+                    <form action="">
+                        <button id="but1" type="submit">
+                            supprimer
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            -->
+            
+        </table>
+    </div>
+    <div id="table1">
+        <div id="titab">
+            <h2>Liste des depenses</h2>
+            <table id="tab">
+                <tr>
+                    <td>
+                        <div id="ajout">
+                            AJOUTER DEPENSE 
+                             <button id="button1" type="submit"><ion-icon name="add-circle-outline"id="button1" ></ion-icon></button> 
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        
+        <table id="table_depense">
+            <thead>
+               <tr id="title">
+                <td>TITRE</td>
+                <td>MONTANT</td>
+                <td>ACTIONS</td>
+               </tr>
+           </thead> 
+            <tbody class="tbody">
+              
+            </tbody>
+        </table>
+    </div>
+
+    <!--CREATION DU POP UP DEPENSE-->
+    <div class="popup">
+        <div class="popup-content">
+
+            <div id="image-close">
+                <img src="close.jpg" alt="" id="close">
+            </div>
+
+            <div id="image-popup">
+                <img src="Budget.png" alt="Logo du budget">
+            </div>
+
+            <h1>AJOUTER DEPENSE</h1>
+            <form action="ajout" id="mon-form">
+                <label for="titre">TITRE</label>
+                <input type="text" required id="titre"><br>
+                <label for="montant">MONTANT</label>
+                <input type="number" required id="montant">
+                <input type="submit" value="VALIDER" id="valide">
+            </form>
+
+        </div>
+    </div>
+
+    <!--CREATION DU POP UP REVENU-->
+    <div class="popup2">
+        <div class="popup-content">
+
+            <div id="image-close" id="close2">
+                <img src="close.jpg" alt="" id="close2">
+            </div>
+
+            <div id="image-popup">
+                <img src="Budget.png" alt="Logo du budget">
+            </div>
+
+            <h1>AJOUTER REVENU</h1>
+            <form action="ajout" id="mon-form">
+                <label for="titre">TITRE</label>
+                <input type="text" required id="titre2"><br>
+                <label for="montant">MONTANT</label>
+                <input type="number" required id="montant2">
+                <input type="submit" value="VALIDER" id="valide2">
+            </form>
+
+        </div>
+    </div>
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>
